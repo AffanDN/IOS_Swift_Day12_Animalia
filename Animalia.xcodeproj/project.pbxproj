@@ -30,6 +30,8 @@
 		3E5B14302BDF35DD0049ADD4 /* ostrich.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3E5B14252BDF35DD0049ADD4 /* ostrich.mp4 */; };
 		3E5B14312BDF35DD0049ADD4 /* rhino.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3E5B14262BDF35DD0049ADD4 /* rhino.mp4 */; };
 		3E5B14322BDF35DD0049ADD4 /* zebra.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3E5B14272BDF35DD0049ADD4 /* zebra.mp4 */; };
+		3ED97C532BDF503700E7185A /* OctagonImageFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED97C522BDF503700E7185A /* OctagonImageFrame.swift */; };
+		3ED97C552BDF5D1C00E7185A /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED97C542BDF5D1C00E7185A /* AnimalGridItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		3E5B14252BDF35DD0049ADD4 /* ostrich.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ostrich.mp4; sourceTree = "<group>"; };
 		3E5B14262BDF35DD0049ADD4 /* rhino.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rhino.mp4; sourceTree = "<group>"; };
 		3E5B14272BDF35DD0049ADD4 /* zebra.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = zebra.mp4; sourceTree = "<group>"; };
+		3ED97C522BDF503700E7185A /* OctagonImageFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctagonImageFrame.swift; sourceTree = "<group>"; };
+		3ED97C542BDF5D1C00E7185A /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			children = (
 				3E3D7E8E2BDF37F3005857DD /* CoverImageView.swift */,
 				3E3D7E992BDF44ED005857DD /* AnimalListItemView.swift */,
+				3ED97C522BDF503700E7185A /* OctagonImageFrame.swift */,
+				3ED97C542BDF5D1C00E7185A /* AnimalGridItemView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -285,10 +291,12 @@
 				3E5B14072BDF32A70049ADD4 /* ContentView.swift in Sources */,
 				3E3D7E982BDF43CA005857DD /* AnimalModel.swift in Sources */,
 				3E3D7E8F2BDF37F3005857DD /* CoverImageView.swift in Sources */,
+				3ED97C532BDF503700E7185A /* OctagonImageFrame.swift in Sources */,
 				3E3D7E952BDF39D6005857DD /* Bundle+Ext.swift in Sources */,
 				3E5B14052BDF32A70049ADD4 /* AnimaliaApp.swift in Sources */,
 				3E3D7E922BDF38F1005857DD /* CoverImageModel.swift in Sources */,
 				3E3D7E9A2BDF44ED005857DD /* AnimalListItemView.swift in Sources */,
+				3ED97C552BDF5D1C00E7185A /* AnimalGridItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
