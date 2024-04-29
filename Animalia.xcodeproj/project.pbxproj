@@ -10,6 +10,8 @@
 		3E3D7E8F2BDF37F3005857DD /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D7E8E2BDF37F3005857DD /* CoverImageView.swift */; };
 		3E3D7E922BDF38F1005857DD /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D7E912BDF38F1005857DD /* CoverImageModel.swift */; };
 		3E3D7E952BDF39D6005857DD /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D7E942BDF39D6005857DD /* Bundle+Ext.swift */; };
+		3E3D7E982BDF43CA005857DD /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D7E972BDF43CA005857DD /* AnimalModel.swift */; };
+		3E3D7E9A2BDF44ED005857DD /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D7E992BDF44ED005857DD /* AnimalListItemView.swift */; };
 		3E5B14052BDF32A70049ADD4 /* AnimaliaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5B14042BDF32A70049ADD4 /* AnimaliaApp.swift */; };
 		3E5B14072BDF32A70049ADD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5B14062BDF32A70049ADD4 /* ContentView.swift */; };
 		3E5B14092BDF32A80049ADD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E5B14082BDF32A80049ADD4 /* Assets.xcassets */; };
@@ -34,6 +36,9 @@
 		3E3D7E8E2BDF37F3005857DD /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		3E3D7E912BDF38F1005857DD /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		3E3D7E942BDF39D6005857DD /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
+		3E3D7E962BDF3FD2005857DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3E3D7E972BDF43CA005857DD /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
+		3E3D7E992BDF44ED005857DD /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
 		3E5B14012BDF32A70049ADD4 /* Animalia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animalia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5B14042BDF32A70049ADD4 /* AnimaliaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimaliaApp.swift; sourceTree = "<group>"; };
 		3E5B14062BDF32A70049ADD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				3E3D7E8E2BDF37F3005857DD /* CoverImageView.swift */,
+				3E3D7E992BDF44ED005857DD /* AnimalListItemView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -87,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				3E3D7E912BDF38F1005857DD /* CoverImageModel.swift */,
+				3E3D7E972BDF43CA005857DD /* AnimalModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 		3E5B14032BDF32A70049ADD4 /* Animalia */ = {
 			isa = PBXGroup;
 			children = (
+				3E3D7E962BDF3FD2005857DD /* Info.plist */,
 				3E3D7E932BDF3986005857DD /* Extensions */,
 				3E3D7E8C2BDF37A1005857DD /* Modules */,
 				3E5B14122BDF334E0049ADD4 /* App */,
@@ -275,10 +283,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E5B14072BDF32A70049ADD4 /* ContentView.swift in Sources */,
+				3E3D7E982BDF43CA005857DD /* AnimalModel.swift in Sources */,
 				3E3D7E8F2BDF37F3005857DD /* CoverImageView.swift in Sources */,
 				3E3D7E952BDF39D6005857DD /* Bundle+Ext.swift in Sources */,
 				3E5B14052BDF32A70049ADD4 /* AnimaliaApp.swift in Sources */,
 				3E3D7E922BDF38F1005857DD /* CoverImageModel.swift in Sources */,
+				3E3D7E9A2BDF44ED005857DD /* AnimalListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,11 +424,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Animalia/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Animalia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,11 +454,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Animalia/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Animalia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
