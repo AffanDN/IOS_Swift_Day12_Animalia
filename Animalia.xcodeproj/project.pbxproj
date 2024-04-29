@@ -32,6 +32,7 @@
 		3E5B14322BDF35DD0049ADD4 /* zebra.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3E5B14272BDF35DD0049ADD4 /* zebra.mp4 */; };
 		3ED97C532BDF503700E7185A /* OctagonImageFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED97C522BDF503700E7185A /* OctagonImageFrame.swift */; };
 		3ED97C552BDF5D1C00E7185A /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED97C542BDF5D1C00E7185A /* AnimalGridItemView.swift */; };
+		3ED97C572BDF60CF00E7185A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED97C562BDF60CF00E7185A /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		3E5B14272BDF35DD0049ADD4 /* zebra.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = zebra.mp4; sourceTree = "<group>"; };
 		3ED97C522BDF503700E7185A /* OctagonImageFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctagonImageFrame.swift; sourceTree = "<group>"; };
 		3ED97C542BDF5D1C00E7185A /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
+		3ED97C562BDF60CF00E7185A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				3E5B14062BDF32A70049ADD4 /* ContentView.swift */,
+				3ED97C562BDF60CF00E7185A /* MainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				3E5B14072BDF32A70049ADD4 /* ContentView.swift in Sources */,
 				3E3D7E982BDF43CA005857DD /* AnimalModel.swift in Sources */,
 				3E3D7E8F2BDF37F3005857DD /* CoverImageView.swift in Sources */,
+				3ED97C572BDF60CF00E7185A /* MainView.swift in Sources */,
 				3ED97C532BDF503700E7185A /* OctagonImageFrame.swift in Sources */,
 				3E3D7E952BDF39D6005857DD /* Bundle+Ext.swift in Sources */,
 				3E5B14052BDF32A70049ADD4 /* AnimaliaApp.swift in Sources */,
