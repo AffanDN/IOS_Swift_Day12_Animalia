@@ -13,6 +13,8 @@ struct ContentView: View {
         GridItem(.flexible())
     ]
     
+    let haptics = UIImpactFeedbackGenerator(style: .medium)
+    
     @State private var gridColumn: Int = 1
     
     @State private var toolbarIcon: String = "square.grid.2x2"
@@ -53,7 +55,9 @@ struct ContentView: View {
                         
                         ForEach(animals) {
                             animal in
-                            AnimalListItemView(animal: animal)
+                            NavigationLink(destination: AnimalDetailView(animal: animal)) {
+                                AnimalListItemView(animal: animal)
+                            }
                         }
                     }
                     .listStyle(.plain)
@@ -61,7 +65,9 @@ struct ContentView: View {
                     ScrollView(showsIndicators: false) {
                         LazyVGrid(columns: gridLayout, alignment: .center, spacing: 12) {
                             ForEach(animals) { animal in
-                                AnimalGridItemView(animal: animal)
+                                NavigationLink(destination: AnimalDetailView(animal: animal)) {
+                                    AnimalGridItemView(animal: animal)
+                                }
                             }
                         }
                     }
@@ -76,6 +82,7 @@ struct ContentView: View {
                             //: TODO isGridViewActive
                             print("List View is Activated")
                             isGridViewActive = false
+                            haptics.impactOccurred()
                         } label: {
                             Image(systemName: "square.fill.text.grid.1x2")
                                 .font(.title2)
