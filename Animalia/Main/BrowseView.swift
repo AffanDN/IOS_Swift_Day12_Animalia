@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BrowseView: View {
     @State private var isGridViewActive = false
     @State private var gridLayout: [GridItem] = [
         GridItem(.flexible())
@@ -107,5 +107,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    BrowseView()
 }
