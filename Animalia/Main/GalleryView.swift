@@ -69,6 +69,9 @@ struct GalleryView: View {
                 }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 50)
+                .onAppear {
+                    gridSwitch()
+                }
                 
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
